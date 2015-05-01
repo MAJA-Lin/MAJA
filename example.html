@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Test</h1>
+
+<p id="demo">
+JavaScript 能改变 HTML 元素的样式。
+</p>
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo") // 找到元素
+x.style.color="#ff0000";          // 改变样式
+}
+
+function zOmg()
+{
+y=document.getElementById("demo") // 找到元素
+y.InnerHTML="YOLO?";
+y.style.color="#f30000";          // 改变样式
+
+}
+</script>
+
+<button type="button" onclick="myFunction()">点击这里</button>
+<br>
+<button type="button" onclick="zOmg()">Right Here</button>
+</body>
+</html>
